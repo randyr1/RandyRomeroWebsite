@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
 <title>Randy's Website</title>
 
 <style>
@@ -9,15 +9,15 @@ body {
     font-family:Arial,sans-serif;font-size:0.8em;
 }
 div#header,div#footer,div#content,div#post {
-    border:1px solid grey;
+    border:1px solid white;
     margin:5px;margin-bottom:100px;padding:8px;
-    background-color:red;
+    background-color:#0066FF;
 }
 div#header,div#footer {
     color:white;background-color:#444;margin-bottom:5px;
 }
 div#content {
-    background-color:#ddd;
+    background-color:#80CC99;
 }
 div#menu ul  {
     margin:0;padding:0;
@@ -29,13 +29,11 @@ div#menu ul li {
     text-shadow: 2px 2px red;
 }
 body {
-   background-color: #717171; /*Default bg, similar to the background's base color*/
+   background-color: #0066FF; /*Default bg, similar to the background's base color*/
    background-image: url("bg.png");
    background-position: right bottom; /*Positioning*/
    background-repeat: no-repeat; /*Prevent showing multiple background images*/
 }
-
-
 </style>
 </head>
 <body>
@@ -50,7 +48,18 @@ function myTimer() {
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
 </script>
+<script>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+ </script>
+<script>
+$(document).ready(function(){
+$(#"button").click(function(){
+$("img src").toggle();
+   });
+});
+</script>
 </div>
+</body>
 <div id="nav">
 <ul>
 <a href="about.html"><li>about</li></a>
@@ -63,24 +72,33 @@ function myTimer() {
 <h2>Interests</h2>
 
 <div id="post">
-<h2>interest</h2>
+<h2>interests</h2>
 <ul>
     <li>
-    Car
+    Learning
    </li>
    <li>
-   anime
+   Computers
    </li>
    <li>
-   movies
+   Technology
    </li>
 
 </div>
-<h2>Gallery</h2>
+<h2>Achievements</h2>
 <div id="post">
-<h2>gallery</h2>
-<img src="http://images1.ecarlist.com/sites/cats_exotic/images/v2/car.png">
-<img src="http://a4.mzstatic.com/us/r30/Purple/v4/2e/57/e8/2e57e874-1b6c-5fe6-675d-75cd893ca7b8/icon128-2x.png">
+<h2>Achievements</h2>
+<li>
+completed 1 year of programming at co- op tech.
+<button id= toggle button>
+<img src="http://schools.nyc.gov/NR/rdonlyres/4245E996-33CE-459A-A2BA-D40F86845BAE/0/D79_CoopTechLogo_FINALCMYK.png" alt=schools; style=width:100px;height:100px; >
+</li>
+<li>
+graduated from high school at lyons community school.
+</li>
+<li>
+completing java script in code academy
+</li>
 </div>
 
 <div id="footer">
